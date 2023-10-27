@@ -1,4 +1,4 @@
-import {Link, NavLink, useLoaderData} from "react-router-dom";
+import {Link, useLoaderData} from "react-router-dom";
 import logo from '../assets/img/logo.png';
 
 const Header = () => {

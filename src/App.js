@@ -2,7 +2,7 @@ import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} fr
 
 //pages
 import Home from "./pages/Home";
-import Beer from "./pages/Beer";
+import Beer, {beerLoader} from "./pages/Beer";
 import Appetizer from "./pages/Appetizer";
 import Ba from "./pages/Ba";
 import NotFound from "./pages/NotFound";
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout/>} loader={headerGetInfo}>
             <Route index element={<Home/>}/>
-            <Route path='beer' element={<Beer/>}/>
+            <Route path='beer' element={<Beer/>} loader={beerLoader}/>
             <Route path='appetizer' element={<Appetizer/>}/>
             <Route path='ba' element={<Ba/>}/>
             <Route path='*' element={<NotFound/>}/>
