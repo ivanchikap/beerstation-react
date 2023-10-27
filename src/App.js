@@ -6,18 +6,14 @@ import Beer, {beerLoader} from "./pages/Beer";
 import Appetizer from "./pages/Appetizer";
 import Ba from "./pages/Ba";
 import NotFound from "./pages/NotFound";
+import Error from "./pages/Error";
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
 
-//actions
-import {headerGetInfo} from "./components/Header";
-
-
-
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path='/' element={<RootLayout/>} loader={headerGetInfo}>
+        <Route path='/' element={<RootLayout/>} errorElement={<Error/>}>
             <Route index element={<Home/>}/>
             <Route path='beer' element={<Beer/>} loader={beerLoader}/>
             <Route path='appetizer' element={<Appetizer/>}/>
