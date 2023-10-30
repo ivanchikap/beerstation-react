@@ -25,6 +25,10 @@ main {
   @include mobile-large {
     padding: 30px 0;
   }
+
+  @include mobile {
+    padding: 10px 0;
+  }
 }
 
 footer {
@@ -38,4 +42,8 @@ footer {
 
 .d-none {
   display: none !important;
+}
+
+.link {
+  @extend .link-ext;
 }

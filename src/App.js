@@ -10,14 +10,16 @@ import Error from "./pages/Error";
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
+import Souvenirs, { souvenirsLoader} from "./pages/Souvenirs";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout/>} errorElement={<Error/>}>
             <Route index element={<Home/>}/>
-            <Route path='beer' element={<Beer/>} loader={beerLoader}/>
+            <Route path='beer' element={<Beer/>} loader={beerLoader} errorElement={<Error/>}/>
             <Route path='appetizer' element={<Appetizer/>}/>
             <Route path='ba' element={<Ba/>}/>
+            <Route path='souvenirs' element={<Souvenirs/>} loader={souvenirsLoader}/>
             <Route path='*' element={<NotFound/>}/>
         </Route>
     )
