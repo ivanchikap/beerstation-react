@@ -6,7 +6,7 @@ const Error = () => {
         <div className='error'>
             <div className="container">
                 <h3 className='error__title'>Сталася помилка!</h3>
-                <p className='error__text'>Упс, щось трапилось. Помилка: <span className='error__value'>{error.message}</span> </p>
+                <p className='error__text'>Упс, щось трапилось. Помилка: <span className='error__value'>{error.message || error.statusText}</span> </p>
             </div>
         </div>
     );
