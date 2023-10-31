@@ -3,6 +3,7 @@ import Product from "../components/Product";
 
 const Beer = () => {
     const alcoholProducts = useLoaderData();
+    throw new Error('custom error');
     return (
         <section className="section js-tab-content beer">
             <div className="container">
