@@ -1,14 +1,3 @@
 .link-ext {
-  font-size: 22px;
-  font-weight: 600;
-  text-decoration: underline;
-  color: $secondary-color;
 
-  @include mobile {
-    font-size: 20px;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
 }

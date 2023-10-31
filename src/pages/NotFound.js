@@ -5,7 +5,7 @@ const NotFound = () => (
         <div className="container">
             <h3 className='error__title'>Сторінка не знайдена!</h3>
             <p className='error__text'>Сторінки з таким URL не існує.</p>
-            <Link className='link' to='/'>Перейдіть на домашню сторінку.</Link>
+            <Link className='error__link' to='/'>Перейдіть на домашню сторінку.</Link>
         </div>
     </div>
 )
