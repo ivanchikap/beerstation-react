@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import Modal from "./Modal";
 const Product = ({prod}) => {
+    const [modal, setModal] = useState(false);
     const maxAlcohol = 16;
     const maxBitterness = 40;
     const maxDensity = 40;
@@ -16,9 +18,56 @@ const Product = ({prod}) => {
 
     const testClass = prod.type !== 'alcohol' ? 'd-none' : 'card__testimonial';
     const cardMeteringClass = prod.metering ? '' : 'd-none';
+
+
+    useEffect(() => {
+        if (modal) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+
+    }, [modal])
+
+    const imagesTemplate = prod.modalImages.reduce((acc, img) => {
+        acc += ` 
+             <div class="modal__img">
+                <img class="js-img" src=${img.src} alt=${img.alt}>
+            </div>
+        `;
+        return acc;
+    }, '');
+
+    const descriptionTemplate = prod.desc.reduce((acc, paragraph) => {
+        acc += `${paragraph}`
+        return acc;
+    }, '');
+
+    const onProductClick = (e) => {
+        e.preventDefault();
+
+        if (!(e.target.classList.contains('js-img')
+            || e.target.classList.contains('card__img')
+            || e.target.classList.contains('card__title')
+            || e.target.classList.contains('card__details')
+        )) {
+            return
+        }
+
+        setModal(true);
+    }
+
+    const onCloseClick = () => {
+        setModal(false);
+    }
+
+    const closeHandler = () => {
+        setModal(false);
+    }
+
     return (
         <div className="main__col">
-            <div data-name={prod.name} className="card" id={prod.name}>
+            <div onClick={onProductClick} data-name={prod.name} className="card" id={prod.name}>
                 <a className="card__img" href="#">
                     <img className="js-img" src={prod.imgPreview} alt={prod.title} />
                         <svg className="card__share-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
@@ -69,6 +118,69 @@ const Product = ({prod}) => {
                     </div>
                 </div>
             </div>
+            {modal && <Modal close={() => closeHandler()}>
+                <svg className="modal__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" onClick={onCloseClick}>
+                    <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/>
+                </svg>
+                <div className="modal__left">
+                    <div className="siema">
+                        {imagesTemplate};
+                    </div>
+                    <div className="modal__angle modal__angle--left">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 320 512">
+                            <path
+                                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                    </div>
+                    <div className="modal__angle modal__angle--right">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div className="modal__right">
+                    <h2 className="modal__title">${prod.title}</h2>
+                    <h3 className="modal__beertype">${prod.subtitle}</h3>
+
+                    <div className="modal__price-wrapper">
+                        <div className="modal__price">
+                            <span>${prod.price}</span>
+                            <span className={cardMeteringClass}>за ${prod.metering || 0}</span>
+                        </div>
+                        <button className="btn btn--default">Придбати</button>
+                    </div>
+
+                    <div className={testClass}>
+                        <div className="card__test-item">
+                            <h6 className="card__test-title">Міцність</h6>
+                            <p className="card__test-value">${prod.alcohol || '0'} %</p>
+                            <div className="card__test-progress">
+                                <div style={alcoholStyle} className="card__test-progress-value"></div>
+                            </div>
+                        </div>
+                        <div className="card__test-item">
+                            <h6 className="card__test-title">Гіркота</h6>
+                            <p className="card__test-value">${prod.bitterness || '0'} IBU</p>
+                            <div className="card__test-progress">
+                                <div style={bitternessStyle} className="card__test-progress-value"></div>
+                            </div>
+                        </div>
+                        <div className="card__test-item">
+                            <h6 className="card__test-title">Щільність</h6>
+                            <p className="card__test-value">${prod.density || '0'} %</p>
+                            <div className="card__test-progress">
+                                <div style={densityStyle} className="card__test-progress-value"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="modal__description">
+                        {descriptionTemplate}
+                    </div>
+                </div>
+            </Modal>}
         </div>
     );
 };
