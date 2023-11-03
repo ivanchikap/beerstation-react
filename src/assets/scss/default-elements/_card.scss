@@ -16,12 +16,16 @@
 
   &__img {
     position: relative;
-    height: 300px;
+    height: 340px;
     width: 100%;
     overflow: hidden;
 
+    @include widescreen {
+      height: 280px;
+    }
+
     @include laptop {
-      height: 240px;
+      height: 220px;
     }
 
     @include tablet {

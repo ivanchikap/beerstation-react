@@ -18,6 +18,7 @@ const router = createBrowserRouter(
             <Route path='appetizer' element={<ProductPage type='appetizer'/>} loader={() => loader('appetizer')} errorElement={<Error/>}/>
             <Route path='ba' element={<ProductPage type='ba'/>} loader={() => loader('ba')} errorElement={<Error/>}/>
             <Route path='souvenirs' element={<ProductPage type='souvenirs'/>} loader={() => loader('souvenirs')} errorElement={<Error/>}/>
+            <Route path='discounts' element={<ProductPage type='discounts'/>} loader={() => loader('')} errorElement={<Error/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Route>
     )

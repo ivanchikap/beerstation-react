@@ -1,26 +1,14 @@
-@keyframes appear {
-  from {
-    transform: scale3d(0.95, 0.95, 1);
-    opacity: .5
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-    opacity: 1
-  }
-}
 .modal {
   position: relative;
   display: flex;
   background-color: #fff;
   width: 90%;
   max-width: 1500px;
-  max-height: 80vh;
-  min-height: 60vh;
+  max-height: 90vh;
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  animation: .2s linear appear;
+  animation: .6s linear appear;
 
   &__wrapper {
     display: flex;
@@ -31,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
     z-index: 99;
   }
 
@@ -43,7 +31,7 @@
   @include mobile {
     max-height: 98vh;
     width: 90%;
-    max-width: 420px;
+    max-width: 400px;
   }
 
   &__close {
@@ -53,40 +41,12 @@
     height: 30px;
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     fill: $gray;
     transition: fill .2s linear;
 
     &:hover {
       fill: $primary-color;
-    }
-  }
-
-
-  &__angle {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50);
-    background-color: #bbb;
-    padding: 6px 4px;
-    fill: rgba(#fff, .7);
-    width: 28px;
-    transition: fill .2s linear, background-color .2s linear;
-
-    &--left {
-      left: 8px;
-      border-radius: 10px 0 0 10px;
-    }
-
-    &--right {
-      right: 8px;
-      border-radius: 0 10px 10px 0;
-    }
-
-    &:hover {
-      background-color: #999;
-      fill: #fff;
     }
   }
 
@@ -97,61 +57,36 @@
     min-height: 100%;
     overflow: hidden;
 
-    @include laptop {
-      width: 400px;
-    }
-
     @include tablet {
-      width: 100%;
+      width: 400px;
       border-radius: 0;
-      min-height: 360px;
-      height: 360px;
       margin: 0 auto;
     }
 
     @include mobile {
-      min-height: 400px;
-      height: 400px;
-    }
-
-    .siema {
-      height: 100%;
-
-      div {
-        height: 100%;
-      }
+      width: 100%;
     }
   }
 
   &__img {
     width: 100%;
-    height: 100%;
+    height: 700px;
+    object-fit: cover;
 
     @include tablet {
-      padding: 20px 0 0 0;
-    }
-
-    @include mobile-large {
-      padding: 10px 0 0 0;
+      height: 560px;
     }
 
     @include mobile {
-      padding: 0;
+      height: 440px;
     }
 
-    img {
+
+    img.js-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center center;
-
-      @include tablet {
-        object-fit: contain;
-      }
-
-      @include mobile {
-        object-fit: cover;
-      }
     }
   }
 
@@ -193,7 +128,9 @@
     padding-right: 16px;
 
     @include mobile {
-      font-size: 30px;
+      font-size: 28px;
+      padding-right: 0;
+      line-height: 1;
     }
   }
 
@@ -224,6 +161,10 @@
     @extend .card__price-wrapper;
     margin: 10px 0;
 
+    @include mobile {
+      margin: 8px 0;
+    }
+
     .btn {
       display: none;
     }
@@ -231,6 +172,10 @@
 
   &__price {
     @extend .card__price;
+    @include mobile {
+      margin-top: 0;
+      font-size: 30px;
+    }
   }
 
   &__cart {
@@ -275,6 +220,12 @@
     h1, h2, h3, h4, h5, h6, p, pre, div, table, iframe, blockquote, dl, ul, ol {
       margin-bottom: 8px;
     }
+  }
+
+  .carousel.carousel-slider {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
   .someclass {

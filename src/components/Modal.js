@@ -1,5 +1,3 @@
-import {useRef} from "react";
-
 const Modal = ({close, children}) => {
     const clickHandler = (e) => {
         e.preventDefault();

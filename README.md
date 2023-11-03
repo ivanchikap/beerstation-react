@@ -1,3 +1,7 @@
+## Вимоги до зображень
+1. В карті товару на головній 460х340, або в такому ж співвідношенні
+2. В модальному вікні 500х700
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

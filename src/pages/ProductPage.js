@@ -28,6 +28,9 @@ const ProductPage = ({type}) => {
         case 'souvenirs':
             title = 'Сувеніри';
             break;
+        case 'discounts':
+            title = 'Акційні товари';
+            break;
         default:
             title = 'Wrong type of ProductPage'
     }

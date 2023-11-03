@@ -21,6 +21,8 @@ body {
 
 main {
   padding: 40px 0;
+  position: relative;
+  overflow: hidden;
 
   @include mobile-large {
     padding: 30px 0;

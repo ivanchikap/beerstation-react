@@ -20,7 +20,6 @@ const Error = () => {
                         <span>Назад</span>
                     </button>
                 </div>
-
             </div>
         </div>
     );

@@ -6,7 +6,9 @@ import Totop from "../components/Totop";
 const RootLayout = () => {
     return (
         <div>
+
            <Header />
+
             <main>
                 <div className="section section--nopading">
                     <div className="container">
@@ -51,15 +53,26 @@ const RootLayout = () => {
                                     </div>
                                 </NavLink>
                             </div>
+                            <div className="categories__item categories__item--discount">
+                                <NavLink to='discounts' data-tab="souvenirs" className="cat-card-discount">
+                                   <p className="cat-card-discount__text">Наявні акційні пропозиції</p>
+                                    <div className="cat-card-discount__bottom">
+                                        <h3>Зверніть увагу!</h3>
+                                    </div>
+                                </NavLink>
+                            </div>
                         </nav>
                     </div>
                 </div>
 
                 <Outlet/>
+
             </main>
+
             <Footer />
 
             <Totop />
+
         </div>
     )
 }

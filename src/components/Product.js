@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Modal from "./Modal";
+import SiemaComponent from "./SiemaComponent";
+import Badge from "./Badge";
 const Product = ({prod}) => {
     const [modal, setModal] = useState(false);
     const maxAlcohol = 16;
@@ -26,17 +28,7 @@ const Product = ({prod}) => {
         } else {
             document.body.classList.remove('no-scroll');
         }
-
     }, [modal])
-
-    const imagesTemplate = prod.modalImages.reduce((acc, img) => {
-        acc += ` 
-             <div class="modal__img">
-                <img class="js-img" src=${img.src} alt=${img.alt}>
-            </div>
-        `;
-        return acc;
-    }, '');
 
     const descriptionTemplate = prod.desc.reduce((acc, paragraph) => {
         acc += `${paragraph}`
@@ -68,11 +60,12 @@ const Product = ({prod}) => {
     return (
         <div className="main__col">
             <div onClick={onProductClick} data-name={prod.name} className="card" id={prod.name}>
+                {!prod.isInShop && <Badge text='У дорозі' type='road'/>}
                 <a className="card__img" href="#">
                     <img className="js-img" src={prod.imgPreview} alt={prod.title} />
-                        <svg className="card__share-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
-                            <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"/>
-                        </svg>
+                    <svg className="card__share-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+                        <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"/>
+                    </svg>
                 </a>
                 <div className="card__info">
                     <div className="card__main-info">
@@ -123,32 +116,17 @@ const Product = ({prod}) => {
                     <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/>
                 </svg>
                 <div className="modal__left">
-                    <div className="siema">
-                        {imagesTemplate};
-                    </div>
-                    <div className="modal__angle modal__angle--left">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 320 512">
-                            <path
-                                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                        </svg>
-                    </div>
-                    <div className="modal__angle modal__angle--right">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path
-                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
-                        </svg>
-                    </div>
+                    <SiemaComponent images={prod?.modalImages} />
                 </div>
 
                 <div className="modal__right">
-                    <h2 className="modal__title">${prod.title}</h2>
-                    <h3 className="modal__beertype">${prod.subtitle}</h3>
+                    <h2 className="modal__title">{prod.title}</h2>
+                    <h3 className="modal__beertype">{prod.subtitle}</h3>
 
                     <div className="modal__price-wrapper">
                         <div className="modal__price">
-                            <span>${prod.price}</span>
-                            <span className={cardMeteringClass}>за ${prod.metering || 0}</span>
+                            <span>{prod.price}</span>
+                            <span className={cardMeteringClass}>за {prod.metering || 0}</span>
                         </div>
                         <button className="btn btn--default">Придбати</button>
                     </div>
@@ -156,21 +134,21 @@ const Product = ({prod}) => {
                     <div className={testClass}>
                         <div className="card__test-item">
                             <h6 className="card__test-title">Міцність</h6>
-                            <p className="card__test-value">${prod.alcohol || '0'} %</p>
+                            <p className="card__test-value">{prod.alcohol || '0'} %</p>
                             <div className="card__test-progress">
                                 <div style={alcoholStyle} className="card__test-progress-value"></div>
                             </div>
                         </div>
                         <div className="card__test-item">
                             <h6 className="card__test-title">Гіркота</h6>
-                            <p className="card__test-value">${prod.bitterness || '0'} IBU</p>
+                            <p className="card__test-value">{prod.bitterness || '0'} IBU</p>
                             <div className="card__test-progress">
                                 <div style={bitternessStyle} className="card__test-progress-value"></div>
                             </div>
                         </div>
                         <div className="card__test-item">
                             <h6 className="card__test-title">Щільність</h6>
-                            <p className="card__test-value">${prod.density || '0'} %</p>
+                            <p className="card__test-value">{prod.density || '0'} %</p>
                             <div className="card__test-progress">
                                 <div style={densityStyle} className="card__test-progress-value"></div>
                             </div>
