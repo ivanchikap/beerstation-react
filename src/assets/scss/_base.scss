@@ -2,9 +2,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
 
   font-family: $open-sans;
@@ -48,4 +45,11 @@ footer {
 
 .link {
   @extend .link-ext;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }

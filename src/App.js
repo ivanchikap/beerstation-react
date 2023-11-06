@@ -14,7 +14,7 @@ import ProductPage from "./pages/ProductPage";
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout/>} errorElement={<Error/>}>
-            <Route path='beer' element={<ProductPage type='alcohol'/>} loader={() => loader('alcohol')} errorElement={<Error/>}/>
+            <Route path='alcohol' element={<ProductPage type='alcohol'/>} loader={() => loader('alcohol')} errorElement={<Error/>}/>
             <Route path='appetizer' element={<ProductPage type='appetizer'/>} loader={() => loader('appetizer')} errorElement={<Error/>}/>
             <Route path='ba' element={<ProductPage type='ba'/>} loader={() => loader('ba')} errorElement={<Error/>}/>
             <Route path='souvenirs' element={<ProductPage type='souvenirs'/>} loader={() => loader('souvenirs')} errorElement={<Error/>}/>

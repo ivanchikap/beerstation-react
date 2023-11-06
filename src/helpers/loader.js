@@ -1,9 +1,9 @@
-export const loader = async (productType) => {
-    const res = await fetch(`http://localhost:4000/${productType}`)
+export const loader = (productType) => {
+    const res = localStorage.getItem(productType)
 
-    if (!res.ok) {
+    if (!res) {
         throw Error('Something wrong: fetch error')
     }
 
-    return res.json()
+    return JSON.parse(res)
 }

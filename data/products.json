@@ -1,5 +1,5 @@
 {
-  "alcohol": [
+  "products": [
     {
       "name": "cidr-mango-peach",
       "type": "alcohol",
@@ -10,6 +10,9 @@
       "price": "55₴",
       "metering": "1кг",
       "isInShop": false,
+      "discount": true,
+      "discountType": "lowerPrice",
+      "discountedPrice": "50₴",
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/cidre-manho-persyk.jpg",
@@ -33,7 +36,10 @@
       "alcohol": "5",
       "price": "55₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": true,
+      "discountType": "lowerPrice",
+      "discountedPrice": "50₴",
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kaktus-m.png",
@@ -53,7 +59,10 @@
       "alcohol": "5",
       "price": "55₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": true,
+      "discountType": "1+1",
+      "discountedPrice": "",
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/cidre-medusa.jpg",
@@ -77,7 +86,10 @@
       "alcohol": "5",
       "price": "55₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": true,
+      "discountType": "2+1",
+      "discountedPrice": "",
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/fragolino-m.jpg",
@@ -105,7 +117,8 @@
       "bitterness": "12",
       "price": "62₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/cheske-m1.jpg",
@@ -131,7 +144,8 @@
       "bitterness": "15",
       "price": "65₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/opillia-m.jpg",
@@ -158,7 +172,8 @@
       "bitterness": "11.6",
       "price": "62₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/berdychiv-m1.jpeg",
@@ -186,7 +201,8 @@
       "bitterness": "10",
       "price": "62₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/berdychiv-m.jpg",
@@ -214,7 +230,8 @@
       "bitterness": "20",
       "price": "74₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/bierwelle-m.JPG",
@@ -242,7 +259,8 @@
       "bitterness": "11",
       "price": "68₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/blanche-de-kyiv-m.jpg",
@@ -268,7 +286,8 @@
       "bitterness": "17",
       "price": "65₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/uman-medove-m.jpg",
@@ -294,7 +313,8 @@
       "bitterness": "18",
       "price": "65₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/waissburg-dunkel-m.png",
@@ -321,7 +341,8 @@
       "bitterness": "12",
       "price": "68₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/waissburg-blanche-m.JPG",
@@ -348,7 +369,8 @@
       "bitterness": "11",
       "price": "62₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/waissburg-lager-m.jpg",
@@ -375,7 +397,8 @@
       "bitterness": "12",
       "price": "62₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/hmelpyvo-m.jpg",
@@ -401,7 +424,8 @@
       "bitterness": "",
       "price": "85₴",
       "metering": "1л",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/nalyvka-m.jpg",
@@ -432,7 +456,8 @@
       "bitterness": "",
       "price": "82₴",
       "metering": "1л",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/vyno-m.jpg",
@@ -464,9 +489,7 @@
         "Для виробництва вин Крафтова використовують виноградники, які розташовані на «виноградній широті» між 46 і 47 градусами – саме на тій самій широті, що й відомі французькі регіони Бордо та Бургундія. У горбистій місцевості Українська Бессарабія природно поєднує в собі довге сонячне літо та коротку порівняно м'яку зиму з частими снігопадами, що дозволяє вирощувати рясні високоякісні врожаї. Поєднання чорноземів та піщаних ґрунтів з горбистій місцевістю забезпечує природну основу для виноробства з незапам'ятних часів.",
         "Історія виноробства регіону налічує щонайменше 1500 років. На площі 1200 га вирощуємо найбільш підходящі сорти винограду. Виноробня обладнана сучасним європейським обладнанням для переробки винограду, зберігання виноматеріалів та розливу вина. Найкращі фахівці галузі докладають зусиль для створення чудового продукту, який буде відповідати очікуванням навіть найвишуканіших шанувальників вина. Ми об'єднали багаторічні традиції виноробства нашої країни із сучасними всесвітніми технологіями. Наш бездоганний продукт доповнюється креативними та дизайнерськими ідеями та спирається на ретельно продуману стратегію."
       ]
-    }
-  ],
-  "appetizer": [
+    },
     {
       "name": "chips-assortment",
       "type": "appetizer",
@@ -475,7 +498,8 @@
       "subtitle": "Зі смаками сиру, бекону, паприки, зелень, курка гриль",
       "price": "25₴",
       "metering": "1уп",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/chips-m.jpg",
@@ -499,7 +523,8 @@
       "subtitle": "Хрін, бекон, сир, паприка, сметана з зеленню, часник, смажений стейк, копчений лосось, креветка в вершковому соусі, васабі, томат-базилік, гриби в сметанному соусі.",
       "price": "35₴",
       "metering": "1уп",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/grinky-m.jpg",
@@ -520,7 +545,8 @@
       "subtitle": "В асортименті",
       "price": "35₴",
       "metering": "1уп",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/grinky-craft-m.jpg",
@@ -539,7 +565,8 @@
       "subtitle": "В асортименті",
       "price": "32₴",
       "metering": "1уп",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/grinky-domashni-m.jpg",
@@ -562,7 +589,8 @@
       "subtitle": "М'ясокомбінат РІАЛ. Часник, хрон, паприка, пряні.",
       "price": "50₴",
       "metering": "1уп",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/vuha-m.jpg",
@@ -593,7 +621,8 @@
       "subtitle": "Снеки закуски до пива, рибні снеки",
       "price": "35₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/anchous-m.jpg",
@@ -617,7 +646,8 @@
       "subtitle": "Закуска до пива. Смаки: сіль, сир",
       "price": "13₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/arahis-m.jpg",
@@ -641,7 +671,8 @@
       "subtitle": "Риба в'ялена солона.",
       "price": "18₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/gustira-m1.jpg",
@@ -666,7 +697,8 @@
       "subtitle": "Ставрида малосольона засушена",
       "price": "38₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/smugastyk-m.jpg",
@@ -690,7 +722,8 @@
       "subtitle": "Риба в'ялена солона",
       "price": "30₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/taran-m.jpg",
@@ -714,7 +747,8 @@
       "subtitle": "Продукт рибний солоний, сушений",
       "price": "55₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/ikra-sudaka-m.jpg",
@@ -738,7 +772,8 @@
       "subtitle": "Продукт рибний солоний, сушений",
       "price": "25₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/ikrianyk-norvezkyi-m.jpg",
@@ -761,7 +796,8 @@
       "subtitle": "Класичні кабаноси, виготовлені з відбірної свинини",
       "price": "35₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kabanosy-m.jpg",
@@ -784,7 +820,8 @@
       "subtitle": "Солено-сушений морепродукт",
       "price": "50₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kalmar-struzhka-m1.jpg",
@@ -807,7 +844,8 @@
       "subtitle": "Солено-сушений морепродукт",
       "price": "50₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kalmar-struzhka-krab-m1.jpg",
@@ -830,7 +868,8 @@
       "subtitle": "Солено-сушений морепродукт",
       "price": "50₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kilce-kalmara-m.jpg",
@@ -854,7 +893,8 @@
       "subtitle": "Солено-сушений морепродукт",
       "price": "44₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/koriushka-m.jpg",
@@ -877,7 +917,8 @@
       "subtitle": "Арахіс в оболонці зі смаком васабі, бекону, сиру",
       "price": "12₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kranch-m.jpg",
@@ -898,7 +939,8 @@
       "subtitle": "Зі смаками: мед і гірчиця, барбек'ю, сир",
       "price": "13₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kukurudza-m.jpg",
@@ -922,7 +964,8 @@
       "subtitle": "Солено-сушений морепродукт",
       "price": "55₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/pautynka-kalmara-m.jpg",
@@ -945,7 +988,8 @@
       "subtitle": "Солено-сушений морепродукт",
       "price": "55₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kalmar-peruanskyi-m.jpg",
@@ -968,7 +1012,8 @@
       "subtitle": "Риба вʼялена прісноводна",
       "price": "24₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/plitka-m.jpg",
@@ -991,7 +1036,8 @@
       "subtitle": "Сир сичужний м'який сулугуні \"Соломка\"",
       "price": "20₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/syr-solomka-m.jpg",
@@ -1015,7 +1061,8 @@
       "subtitle": "Палички з лосося сушено-підкопчені",
       "price": "30₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/smuga-lososia-m.jpg",
@@ -1038,7 +1085,8 @@
       "subtitle": "Рибна закуска, засолена, сушена",
       "price": "35₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/tunec-m.jpg",
@@ -1061,7 +1109,8 @@
       "subtitle": "Фісташка “Каліфорнія” смажена з сіллю",
       "price": "40₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/fistashka-m.jpg",
@@ -1085,7 +1134,8 @@
       "subtitle": "Слайси свинячі солено-сушені",
       "price": "55₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/hamon-m.jpg",
@@ -1104,7 +1154,8 @@
       "subtitle": "Риба вʼялена прісноводна",
       "price": "35₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/chehon-m.jpg",
@@ -1123,7 +1174,8 @@
       "subtitle": "Чипси з мʼяса курки \"по-Діжонськи\"",
       "price": "45₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/dizhonski-m.jpg",
@@ -1147,7 +1199,8 @@
       "subtitle": "М'ясні чипси",
       "price": "45₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/miaso-chipsy-m.jpg",
@@ -1170,7 +1223,8 @@
       "subtitle": "Янтарна рибка з перцем, шматочки",
       "price": "44₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/yantarna-m.jpg",
@@ -1193,7 +1247,8 @@
       "subtitle": "Риба в'ялена річкова",
       "price": "17₴",
       "metering": "50гр",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/liasch-m.jpg",
@@ -1207,34 +1262,7 @@
       "desc": [
         "Лящ в'ялений є дуже корисним продуктом. Має багатий вітамінний склад:  B1 ,  B2 ,  E ,  PP . Що ж до мінеральних речовин, у лящі присутні багато  заліза ,  кальцію . Високий вміст  молібдену ,  нікелю ,  фосфору ,  фтору ,  хлору ,  хрому  та  цинку."
       ]
-    }
-  ],
-  "souvenirs": [
-    {
-      "name": "bocal-glass",
-      "type": "souvenirs",
-      "imgPreview": "https://ivanchikap.github.io/beerstation/img/bocal.jpg",
-      "title": "Келихи для пива",
-      "subtitle": "Гарний подарунок для поціновувачів вишуканого посуду.",
-      "price": "150₴",
-      "metering": "1шт",
-      "isInShop": "true",
-      "modalImages": [
-        {
-          "src": "https://ivanchikap.github.io/beerstation/img/bocal-m.jpg",
-          "alt": "бокал,зображення"
-        },
-        {
-          "src": "https://ivanchikap.github.io/beerstation/img/bocal-m1.jpg",
-          "alt": "бокал,зображення"
-        }
-      ],
-      "desc": [
-        "Келихи для пива для поціновувачів пінного."
-      ]
-    }
-  ],
-  "ba": [
+    },
     {
       "name": "lemonade",
       "type": "ba",
@@ -1243,7 +1271,8 @@
       "subtitle": "Вінницька харчосмакова фабрика",
       "price": "27₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/lemonade-m.jpg",
@@ -1268,7 +1297,8 @@
       "subtitle": "Вінницька харчосмакова фабрика",
       "price": "27₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/mohito-1.jpg",
@@ -1293,7 +1323,8 @@
       "subtitle": "Вінницька харчосмакова фабрика",
       "price": "30₴",
       "metering": "1кг",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/kvas-m.jpg",
@@ -1318,7 +1349,8 @@
       "subtitle": "Пиво безалкогольне 0.0%, Ж/Б 0.33",
       "price": "50₴",
       "metering": "1шт",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/stella-m.jpg",
@@ -1337,7 +1369,8 @@
       "subtitle": "Сік без цукру 200 мл, в асортименті",
       "price": "20₴",
       "metering": "1шт",
-      "isInShop": "true",
+      "isInShop": true,
+      "discount": false,
       "modalImages": [
         {
           "src": "https://ivanchikap.github.io/beerstation/img/sik-bob-m.jpg",
@@ -1347,6 +1380,30 @@
       "desc": [
         "Натуральний концентрований сік.",
         "В асортименті: яблуко-виноград, яблуко-персик, яблуко-полуниця, мультифрукт"
+      ]
+    },
+    {
+      "name": "bocal-glass",
+      "type": "souvenirs",
+      "imgPreview": "https://ivanchikap.github.io/beerstation/img/bocal.jpg",
+      "title": "Келихи для пива",
+      "subtitle": "Гарний подарунок для поціновувачів вишуканого посуду.",
+      "price": "150₴",
+      "metering": "1шт",
+      "isInShop": true,
+      "discount": false,
+      "modalImages": [
+        {
+          "src": "https://ivanchikap.github.io/beerstation/img/bocal-m.jpg",
+          "alt": "бокал,зображення"
+        },
+        {
+          "src": "https://ivanchikap.github.io/beerstation/img/bocal-m1.jpg",
+          "alt": "бокал,зображення"
+        }
+      ],
+      "desc": [
+        "Келихи для пива для поціновувачів пінного."
       ]
     }
   ],
