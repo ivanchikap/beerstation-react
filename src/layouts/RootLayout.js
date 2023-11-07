@@ -67,7 +67,7 @@ const RootLayout = () => {
                     setProducts(data);
                     localStorage.setItem('products', JSON.stringify(data));
                 })
-                .catch(err => console.log(err))
+                .catch(err => setError(err))
                 .finally(() => {
                     setLoading(false)
                 })
