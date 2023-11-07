@@ -53,3 +53,14 @@ footer {
   justify-content: space-between;
   min-height: 100vh;
 }
+
+.spinner {
+  justify-content: center;
+  align-items: center;
+}
+
+.line-through {
+  font-size: 30px;
+  text-decoration: line-through;
+  color: lighten(#000, 40%);
+}

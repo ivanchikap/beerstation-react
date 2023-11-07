@@ -1,11 +1,12 @@
 .cat-card-discount {
+  font-size: 26px;
   z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
   right: -20px;
-  top: 0;
+  top: 8px;
   text-align: center;
   width: auto;
   height: auto;
@@ -24,17 +25,44 @@
     color: $primary-color;
   }
 
+  &.active {
+    color: $primary-color;
+  }
+
+  @include laptop {
+    font-size: 22px;
+  }
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include mobile-large {
+    top: 4px;
+  }
+
   &__text {
-    font-size: 26px;
     color: #212121;
     padding: 20px 28px;
+
+    @include tablet {
+      padding: 12px 28px;
+    }
+
+    @include mobile {
+      padding: 12px 28px 12px 10px;
+    }
+
   }
   &__bottom {
-    font-size: 30px;
     font-family: $montserrat;
     text-transform: uppercase;
     padding: 8px 20px;
     background-color: rgba(0, 0, 0, .2);
     text-decoration: underline;
+
+    @include mobile {
+      padding: 8px 20px 8px 10px;
+    }
   }
 }

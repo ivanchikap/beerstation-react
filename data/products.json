@@ -10,8 +10,10 @@
       "price": "55₴",
       "metering": "1кг",
       "isInShop": false,
+      "isInShopText": "У дорозі",
       "discount": true,
       "discountType": "lowerPrice",
+      "discountText": "Ціна знижена",
       "discountedPrice": "50₴",
       "modalImages": [
         {
@@ -39,6 +41,7 @@
       "isInShop": true,
       "discount": true,
       "discountType": "lowerPrice",
+      "discountText": "Ціна знижена",
       "discountedPrice": "50₴",
       "modalImages": [
         {
@@ -61,7 +64,8 @@
       "metering": "1кг",
       "isInShop": true,
       "discount": true,
-      "discountType": "1+1",
+      "discountType": "count",
+      "discountText": "1 + 1",
       "discountedPrice": "",
       "modalImages": [
         {
@@ -88,7 +92,8 @@
       "metering": "1кг",
       "isInShop": true,
       "discount": true,
-      "discountType": "2+1",
+      "discountType": "count",
+      "discountText": "2 + 1",
       "discountedPrice": "",
       "modalImages": [
         {

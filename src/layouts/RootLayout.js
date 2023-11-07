@@ -4,18 +4,30 @@ import Footer from "../components/Footer";
 import Totop from "../components/Totop";
 import {useEffect, useState} from "react";
 import CategoriesItem from "../components/CategoriesItem";
+import Error from "../pages/Error";
+import Spinner from "../components/Spinner";
 
 const RootLayout = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
+    const [error, setError] = useState('');
 
-    const productTypesAll = products.map(prod => prod.type);
-    const [...prodTypes] = new Set(productTypesAll);
-    const alcohol = products.filter((product) => product.type === "alcohol");
-    const ba = products.filter((product) => product.type === "ba");
-    const appetizer = products.filter((product) => product.type === "appetizer");
-    const souvenirs = products.filter((product) => product.type === "souvenirs");
+    let prodTypes = [];
+    let alcohol = [];
+    let ba = [];
+    let appetizer = [];
+    let souvenirs = [];
+    let discountedProducts = [];
+
+    if (products.length > 0) {
+        const productTypesAll = products.map(prod => prod.type);
+        [...prodTypes] = new Set(productTypesAll);
+        alcohol = products.filter((product) => product.type === "alcohol");
+        ba = products.filter((product) => product.type === "ba");
+        appetizer = products.filter((product) => product.type === "appetizer");
+        souvenirs = products.filter((product) => product.type === "souvenirs");
+        discountedProducts = products.filter((product) => product.discount);
+    }
 
     useEffect(() => {
         getProducts();
@@ -37,41 +49,58 @@ const RootLayout = () => {
         localStorage.setItem('souvenirs', JSON.stringify(souvenirs))
     }, [souvenirs])
 
+    useEffect(() => {
+        localStorage.setItem('discounted', JSON.stringify(discountedProducts))
+    }, [discountedProducts])
+
     const getProducts = () => {
         setLoading(true);
-        fetch(`http://localhost:4000/products`)
-            .then(res => res.json())
-            .then(data => {
-                setProducts(data);
-                localStorage.setItem('products', JSON.stringify(data));
-            })
-            .catch(err => setError(true))
-            .finally(() => {
-                setLoading(false)
-            })
+        try {
+            fetch(`http://localhost:4000/products`)
+                .then(res => {
+                    if (!res.ok) {
+                        setError(`Network response was not ok: ${res.status} ${res.statusText}`);
+                    }
+                    return res.json()
+                })
+                .then(data => {
+                    setProducts(data);
+                    localStorage.setItem('products', JSON.stringify(data));
+                })
+                .catch(err => console.log(err))
+                .finally(() => {
+                    setLoading(false)
+                })
+        } catch (e) {
+            console.log(e);
+            setError(e)
+        }
     }
+
+    const sectionStyle = discountedProducts.length > 0 ? "section section--nopading mt-6" : "section section--nopading";
 
     return (
         <>
             <Header/>
 
             <main>
-                {loading && <p>Loading ....</p>}
-                <div className="section section--nopading">
+                {error && <Error externalError={error} />}
+                {loading && !error && <Spinner />}
+                <div className={sectionStyle}>
                     <div className="container">
-                        <nav className="categories">
-                            {prodTypes?.length > 0 && (
-                                prodTypes.map((type) => <CategoriesItem key={type} type={type} />)
+                        {!error && !loading && products.length > 0 && (<nav className="categories">
+                            {prodTypes && prodTypes?.length > 0 && (
+                                prodTypes?.map((type) => <CategoriesItem key={type} type={type}/>)
                             )}
-                            <div className="categories__item categories__item--discount">
-                                <NavLink to='discounts' data-tab="souvenirs" className="cat-card-discount">
-                                    <p className="cat-card-discount__text">Наявні акціїйна пропозиції</p>
+                            {discountedProducts.length > 0 && (
+                                <NavLink to='discounts' className="cat-card-discount">
+                                    <p className="cat-card-discount__text">Наявні акціїйні пропозиції</p>
                                     <div className="cat-card-discount__bottom">
                                         <h3>Зверніть увагу!</h3>
                                     </div>
                                 </NavLink>
-                            </div>
-                        </nav>
+                           )}
+                        </nav>)}
                     </div>
                 </div>
 

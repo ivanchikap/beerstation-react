@@ -7,24 +7,28 @@
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  left: 20px;
-  top: 20px;
   background-color: grey;
   z-index: 11;
 
   &.warning {
     background-color: $primary-color;
-    color: #212121;
+    color: #fff;
+    left: 20px;
+    top: 20px;
   }
 
   &.success {
-    background-color: $primary-color;
+    left: 20px;
+    top: 20px;
+    background-color: $secondary-color;
     color: #fff;
   }
 
   &.road {
     background-color: #212121;
     color: #fff;
+    right: 20px;
+    bottom: 20px;
     
     &:before {
       content: '';

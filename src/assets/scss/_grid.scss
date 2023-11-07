@@ -387,6 +387,18 @@
   margin-top: 3rem !important;
 }
 
+.mt-6 {
+  margin-top: 6.4rem !important;
+
+  @include tablet {
+    margin-top: 4.4rem !important;
+  }
+
+  @include mobile {
+    margin-top: 6.4rem !important;
+  }
+}
+
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important;
