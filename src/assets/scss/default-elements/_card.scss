@@ -144,6 +144,11 @@
     font-weight: 600;
     margin-top: 12px;
 
+    @include mobile {
+      margin-top: 0;
+      font-size: 30px;
+    }
+
      > span {
       display: block;
 

@@ -64,3 +64,11 @@ footer {
   text-decoration: line-through;
   color: lighten(#000, 40%);
 }
+
+.carousel.carousel-slider .control-arrow {
+  background: rgba(0,0,0,0.4) !important;
+
+  &:hover {
+    background: rgba(0,0,0,0.6);
+  }
+}

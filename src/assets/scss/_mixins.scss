@@ -19,6 +19,11 @@
     @content;
   }
 }
+@mixin tablet-landscape {
+  @media screen and (max-width: $tablet) and (orientation: landscape) {
+    @content;
+  }
+}
 @mixin mobile-large {
   @media screen and (max-width: $mobile-large) {
     @content;
@@ -26,6 +31,11 @@
 }
 @mixin mobile {
   @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+@mixin mobile-large-landscape {
+  @media screen and (max-width: $mobile-large) and (orientation: landscape) {
     @content;
   }
 }
