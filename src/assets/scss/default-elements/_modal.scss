@@ -200,7 +200,7 @@
   }
 
   &__cart {
-    @extend .card__cart;
+    display: none;
   }
 
   &__testimonial {

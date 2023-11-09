@@ -174,15 +174,21 @@
     }
   }
 
-  &__cart {
-    display: none;
-    cursor: pointer;
-    height: 48px;
-    width: 48px;
-    transition: fill .2s linear;
+  &__price-icons {
+    svg {
+      cursor: pointer;
+      height: 38px;
+      width: auto;
+      transition: fill .2s linear;
 
-    &:hover {
-      fill: darken($secondary-color, 10%);
+      &:hover {
+        fill: darken($secondary-color, 10%);
+      }
+
+      &:last-child {
+        display: none;
+        margin-left: 18px;
+      }
     }
   }
 
