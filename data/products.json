@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": 1,
       "name": "cidr-mango-peach",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/cidre-logo.png",
@@ -30,6 +31,7 @@
       ]
     },
     {
+      "id": 2,
       "name": "cidr-cactus",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kaktus.png",
@@ -54,6 +56,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "cidr-medusa",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/cidre-logo.png",
@@ -82,6 +85,7 @@
       ]
     },
     {
+      "id": 4,
       "name": "cidr-fragolino",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/cidre-logo.png",
@@ -112,6 +116,7 @@
       ]
     },
     {
+      "id": 5,
       "name": "beer-cheske",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/cheske.jpg",
@@ -139,6 +144,7 @@
       ]
     },
     {
+      "id": 6,
       "name": "beer-opillia",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/opillia.jpg",
@@ -167,6 +173,7 @@
       ]
     },
     {
+      "id": 7,
       "name": "beer-berdychiv",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/berdychiv.png",
@@ -196,6 +203,7 @@
       ]
     },
     {
+      "id": 8,
       "name": "beer-pshen-berdychiv",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/berdychiv-pshen.jpg",
@@ -225,6 +233,7 @@
       ]
     },
     {
+      "id": 9,
       "name": "beer-bierwelle",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/bierwelle.png",
@@ -254,6 +263,7 @@
       ]
     },
     {
+      "id": 10,
       "name": "beer-blanche-kyiv",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/blanche-de-kyiv.jpg",
@@ -281,6 +291,7 @@
       ]
     },
     {
+      "id": 11,
       "name": "beer-uman-medove",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/uman-medove.jpg",
@@ -308,6 +319,7 @@
       ]
     },
     {
+      "id": 12,
       "name": "beer-waissburg-dunkel",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/weissburg-dunkel.jpg",
@@ -336,6 +348,7 @@
       ]
     },
     {
+      "id": 13,
       "name": "beer-waissburg-blanche",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/waiisburg-blanche.jpg",
@@ -364,6 +377,7 @@
       ]
     },
     {
+      "id": 14,
       "name": "beer-waissburg-lager",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/waissburg-lager.jpg",
@@ -392,6 +406,7 @@
       ]
     },
     {
+      "id": 15,
       "name": "beer-proskurivske",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/hmelpyvo.JPG",
@@ -419,6 +434,7 @@
       ]
     },
     {
+      "id": 16,
       "name": "nalyvka",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/nalyvka.jpg",
@@ -451,6 +467,7 @@
       ]
     },
     {
+      "id": 17,
       "name": "vynp",
       "type": "alcohol",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/vyno.jpg",
@@ -496,6 +513,7 @@
       ]
     },
     {
+      "id": 18,
       "name": "chips-assortment",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/chips.jpg",
@@ -521,6 +539,7 @@
       ]
     },
     {
+      "id": 19,
       "name": "grinky-hvyliasti",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/grinky.jpg",
@@ -543,6 +562,7 @@
       ]
     },
     {
+      "id": 20,
       "name": "grinky-craft",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/grinky-craft.jpg",
@@ -563,6 +583,7 @@
       ]
     },
     {
+      "id": 21,
       "name": "grinky-domashni",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/grinky-domashni.jpg",
@@ -587,6 +608,7 @@
       ]
     },
     {
+      "id": 22,
       "name": "vuha",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/vuha.jpg",
@@ -619,6 +641,7 @@
       ]
     },
     {
+      "id": 23,
       "name": "anchous",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/anchous.JPG",
@@ -644,6 +667,7 @@
       ]
     },
     {
+      "id": 24,
       "name": "arahis",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/arahis.jpg",
@@ -669,6 +693,7 @@
       ]
     },
     {
+      "id": 25,
       "name": "gustira",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/gustira.jpg",
@@ -695,6 +720,7 @@
       ]
     },
     {
+      "id": 26,
       "name": "smugastyk",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/smugastyk.JPG",
@@ -720,6 +746,7 @@
       ]
     },
     {
+      "id": 27,
       "name": "taran",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/taran.jpg",
@@ -745,6 +772,7 @@
       ]
     },
     {
+      "id": 28,
       "name": "ikra-sudaka",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/ikra-sudaka.JPG",
@@ -770,6 +798,7 @@
       ]
     },
     {
+      "id": 29,
       "name": "ikrianyk-norvezkyi",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/ikrianyk-norvezkyi.jpg",
@@ -794,6 +823,7 @@
       ]
     },
     {
+      "id": 30,
       "name": "kabanosy",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kabanosy.jpg",
@@ -818,6 +848,7 @@
       ]
     },
     {
+      "id": 31,
       "name": "kalmar-struzhka",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kalmar-struzhka.jpg",
@@ -842,6 +873,7 @@
       ]
     },
     {
+      "id": 32,
       "name": "kalmar-struzhka-krab",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kalmar-struzhka-krab.jpg",
@@ -866,6 +898,7 @@
       ]
     },
     {
+      "id": 33,
       "name": "kilce-kalmara",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kilce-kalmara.jpg",
@@ -891,6 +924,7 @@
       ]
     },
     {
+      "id": 34,
       "name": "koriushka",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/koriushka.jpg",
@@ -915,6 +949,7 @@
       ]
     },
     {
+      "id": 35,
       "name": "kranch",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kranch.jpg",
@@ -937,6 +972,7 @@
       ]
     },
     {
+      "id": 36,
       "name": "kukurudza",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kukurudza.jpg",
@@ -962,6 +998,7 @@
       ]
     },
     {
+      "id": 37,
       "name": "pautynka-kalmara",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/pautynka-kalmara.jpg",
@@ -986,6 +1023,7 @@
       ]
     },
     {
+      "id": 38,
       "name": "kalmar-peruanskyi",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kalmar-peruanskyi.jpg",
@@ -1010,6 +1048,7 @@
       ]
     },
     {
+      "id": 39,
       "name": "plitka",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/plitka.jpg",
@@ -1034,6 +1073,7 @@
       ]
     },
     {
+      "id": 40,
       "name": "syr-solomka",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/syr-solomka.jpg",
@@ -1059,6 +1099,7 @@
       ]
     },
     {
+      "id": 41,
       "name": "smuga-lososia",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/smuga-lososia.jpg",
@@ -1083,6 +1124,7 @@
       ]
     },
     {
+      "id": 42,
       "name": "tunec",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/tunec.jpg",
@@ -1107,6 +1149,7 @@
       ]
     },
     {
+      "id": 43,
       "name": "fistashka",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/fistashka.jpg",
@@ -1132,6 +1175,7 @@
       ]
     },
     {
+      "id": 44,
       "name": "hamon",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/hamon.jpg",
@@ -1152,6 +1196,7 @@
       ]
     },
     {
+      "id": 45,
       "name": "chehon",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/chehon.jpg",
@@ -1172,6 +1217,7 @@
       ]
     },
     {
+      "id": 46,
       "name": "dizhonski",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/dizhonski.jpg",
@@ -1197,6 +1243,7 @@
       ]
     },
     {
+      "id": 47,
       "name": "miaso-chipsy",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/miaso-chipsy.jpg",
@@ -1221,6 +1268,7 @@
       ]
     },
     {
+      "id": 48,
       "name": "yantarna",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/yantarna.jpg",
@@ -1245,6 +1293,7 @@
       ]
     },
     {
+      "id": 49,
       "name": "liasch",
       "type": "appetizer",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/liasch.jpg",
@@ -1269,6 +1318,7 @@
       ]
     },
     {
+      "id": 50,
       "name": "lemonade",
       "type": "ba",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/limonad.jpg",
@@ -1295,6 +1345,7 @@
       ]
     },
     {
+      "id": 51,
       "name": "mohito",
       "type": "ba",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/mohito.jpg",
@@ -1321,6 +1372,7 @@
       ]
     },
     {
+      "id": 52,
       "name": "kvas",
       "type": "ba",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/kvas.jpg",
@@ -1347,6 +1399,7 @@
       ]
     },
     {
+      "id": 53,
       "name": "stella",
       "type": "ba",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/stella.jpg",
@@ -1367,6 +1420,7 @@
       ]
     },
     {
+      "id": 54,
       "name": "sik-bob",
       "type": "ba",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/sik-bob.jpg",
@@ -1388,6 +1442,7 @@
       ]
     },
     {
+      "id": 55,
       "name": "bocal-glass",
       "type": "souvenirs",
       "imgPreview": "https://ivanchikap.github.io/beerstation/img/bocal.jpg",

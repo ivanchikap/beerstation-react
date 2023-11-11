@@ -10,6 +10,7 @@ import RootLayout from "./layouts/RootLayout";
 //loader
 import {loader} from "./helpers/loader";
 import ProductPage from "./pages/ProductPage";
+import ProductModalPage from "./pages/ProductModalPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
             <Route path='ba' element={<ProductPage type='ba'/>} loader={() => loader('ba')} errorElement={<Error/>}/>
             <Route path='souvenirs' element={<ProductPage type='souvenirs'/>} loader={() => loader('souvenirs')} errorElement={<Error/>}/>
             <Route path='discounts' element={<ProductPage type='discounts'/>} loader={() => loader('discounted')} errorElement={<Error/>}/>
+            <Route path=':id' element={<ProductModalPage />}/>
             <Route path='*' element={<NotFound/>}/>
         </Route>
     )
