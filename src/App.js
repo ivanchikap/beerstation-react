@@ -1,16 +1,22 @@
+import React from 'react';
 import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from "react-router-dom";
+
+//plugin
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 //pages
 import NotFound from "./pages/NotFound";
 import Error from "./pages/Error";
+import ProductPage from "./pages/ProductPage";
+import ProductModalPage from "./pages/ProductModalPage";
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
 
 //loader
 import {loader} from "./helpers/loader";
-import ProductPage from "./pages/ProductPage";
-import ProductModalPage from "./pages/ProductModalPage";
+
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -30,6 +36,7 @@ function App() {
     return (
         <div className="App">
             <RouterProvider router={router}/>
+            <ToastContainer />
         </div>
     );
 }

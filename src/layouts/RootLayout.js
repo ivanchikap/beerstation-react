@@ -6,9 +6,12 @@ import {useEffect, useState} from "react";
 import CategoriesItem from "../components/CategoriesItem";
 import Error from "../pages/Error";
 import Spinner from "../components/Spinner";
+import {fetchInfo} from "../helpers/fetchInfo";
 
 const RootLayout = () => {
     const [products, setProducts] = useState([]);
+    const [info, setInfo] = useState({});
+    const {phoneHref, phone, address, googleMapsLink, timeStart, timeFinish, dns} = info;
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
@@ -31,6 +34,7 @@ const RootLayout = () => {
 
     useEffect(() => {
         getProducts();
+        fetchInfo().then(res => setInfo(res));
     }, [])
 
     useEffect(() => {
@@ -81,7 +85,7 @@ const RootLayout = () => {
 
     return (
         <>
-            <Header/>
+            <Header info={info}/>
 
             <main>
                 {error && <Error externalError={error} />}
@@ -108,7 +112,7 @@ const RootLayout = () => {
 
             </main>
 
-            <Footer/>
+            <Footer phoneHref={phoneHref} phone={phone}/>
 
             <Totop/>
 
