@@ -2,7 +2,7 @@ import {NavLink, Outlet} from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Totop from "../components/Totop";
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import CategoriesItem from "../components/CategoriesItem";
 import Error from "../pages/Error";
 import Spinner from "../components/Spinner";
@@ -11,16 +11,16 @@ import {fetchInfo} from "../helpers/fetchInfo";
 const RootLayout = () => {
     const [products, setProducts] = useState([]);
     const [info, setInfo] = useState({});
-    const {phoneHref, phone, address, googleMapsLink, timeStart, timeFinish, dns} = info;
+    const {phoneHref, phone} = info;
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
     let prodTypes = [];
-    let alcohol = [];
-    let ba = [];
-    let appetizer = [];
-    let souvenirs = [];
-    let discountedProducts = [];
+    let alcohol = useMemo(() => [], []);
+    let ba = useMemo(() => [], []);
+    let appetizer = useMemo(() => [], []);
+    let souvenirs = useMemo(() => [], []);
+    let discountedProducts = useMemo(() => [], []);
 
     if (products.length > 0) {
         const productTypesAll = products.map(prod => prod.type);
@@ -88,8 +88,8 @@ const RootLayout = () => {
             <Header info={info}/>
 
             <main>
-                {error && <Error externalError={error} />}
-                {loading && !error && <Spinner />}
+                {error && <Error externalError={error}/>}
+                {loading && !error && <Spinner/>}
                 <div className={sectionStyle}>
                     <div className="container">
                         {!error && !loading && products.length > 0 && (<nav className="categories">
@@ -103,7 +103,7 @@ const RootLayout = () => {
                                         <h3>Зверніть увагу!</h3>
                                     </div>
                                 </NavLink>
-                           )}
+                            )}
                         </nav>)}
                     </div>
                 </div>
