@@ -34,7 +34,10 @@ const RootLayout = () => {
 
     useEffect(() => {
         getProducts();
-        fetchInfo().then(res => setInfo(res));
+        fetchInfo()
+            .then(res => setInfo(res))
+            .catch(err => setError(err.message))
+        ;
     }, [])
 
     useEffect(() => {
@@ -71,13 +74,12 @@ const RootLayout = () => {
                     setProducts(data);
                     localStorage.setItem('products', JSON.stringify(data));
                 })
-                .catch(err => setError(err))
+                .catch(err => setError(err.message))
                 .finally(() => {
                     setLoading(false)
                 })
         } catch (e) {
-            console.log(e);
-            setError(e)
+            setError(e.message)
         }
     }
 
